@@ -25,7 +25,7 @@ export default function Card({pokemon}){
     if(details === null){return<>NotFound</>}
 
     return(
-        <div className="w-1/5 flex flex-col justify-center items-center pt-2 pb-4  mb-4 rounded-md border-solid border-2 border-red-700 shadow-2xl bg-slate-800 text-white">
+        <div className="flex flex-col justify-center items-center pt-2 pb-4  mb-4 rounded-md border-solid border-2 border-red-700 shadow-2xl bg-slate-800 text-white lg:w-1/5">
             <div className="relative h-[200px] w-[200px]">
                 <Image src={details.sprites.front_default} alt={details.name} fill />
             </div>

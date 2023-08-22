@@ -14,7 +14,7 @@ export default async function Home() {
         </div>
       </div>
       
-      <div className="container flex flex-wrap gap-5 justify-evenly m-auto">
+      <div className="flex flex-col mx-3 lg:flex-row lg:flex-wrap lg:justify-evenly lg:gap-5">
        
           {pokemons?.map((pokemon) => (
             <Card key={pokemon.id} pokemon={pokemon} />           
